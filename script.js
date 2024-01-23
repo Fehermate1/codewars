@@ -1,11 +1,8 @@
-function swapHeadAndTail(arr) {
-    var middle = Math.floor(arr.length / 2);
-    var head = arr.slice(0, middle);
-    var tail = arr.slice(-middle);
-  
-    if (arr.length % 2 !== 0) {
-      tail.push(arr[middle]);
+function getAverage(marks)
+{
+  var grades = 0;
+  for (var i = 0; i < marks.length; i++) {
+    grades += marks[i];
   }
-  
-  return tail.concat(head);
-}
+  return Math.floor(grades / marks.length);
+};
